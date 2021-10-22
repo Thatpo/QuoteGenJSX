@@ -1,0 +1,59 @@
+#root, html, body {
+    margin: 0;
+    padding: 0;
+    border:0;
+    height:100vh;
+    box-sizing:border-box;
+    /* note if this doesnt work for setting page properly then probably an element has margin in it */
+}
+h1{
+    margin:0;
+}
+.app {
+    height:100%;
+
+    background: linear-gradient(to bottom right, #69E0E1, #7272CF);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+.card{
+    background-color:whitesmoke;
+    width:60%;
+    height:40%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    border-radius:25px;
+    padding:2%;
+    box-shadow:10px 10px rgba(0, 0, 0, 0.5);
+}
+h1{
+    display:flex;
+    align-items: center;
+    height:280px;
+
+}
+button{
+    border-radius:25px;
+    margin:20px;
+    width:150px;
+    height:50px;
+    background-color:lightblue;
+    transition-duration: 0.4s;
+}
+button:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+}
+@media only screen and (max-width: 600px) {
+    .card {
+      height:60%;
+      width:60%;
+    }
+    h1{
+        font-size:6vw;
+    }
+  }
